@@ -1,6 +1,8 @@
 ### :rocket:ArtFlow-Aplicación-Android:rocket:
 Desarrollo de Aplicación para Android -  - Proyecto para la catedra Seminario de actualización 1, de la carrera Lic. en Diseño y Producción Multimedia. (Dictada por Patricio Pedersoli)
 
+[![artflow-portada.png](https://i.postimg.cc/RhFvfM13/artflow-portada.png)](https://postimg.cc/sQkFCCNy)
+
 
 ### Indice
 
@@ -8,8 +10,11 @@ Desarrollo de Aplicación para Android -  - Proyecto para la catedra Seminario d
 - [Objetivos Específicos de la Aplicación](#Objetivos-Específicos-de-la-Aplicación)
 - [Ejemplo de uso](#Ejemplo-de-uso)
 - [Estructura aplicación (MAP) para ArtFlow](#Estructura-aplicación-(MAP)-para-ArtFlow)
+- [Arquitectura del Sistema](#Arquitectura-del-Sistema)
 - [Historias de usuario](#Historias-de-usuario)
 - [Enlaces de interes](#Enlaces-de-interes)
+- [Responsables](#Responsables)
+- [Autores](#Autores)
   
 
 
@@ -44,6 +49,28 @@ Imagina a un diseñador de animación que ha trabajado en un proyecto innovador.
 <a href='https://postimg.cc/m1FNTnd4' target='_blank'><img src='https://i.postimg.cc/brm69ckZ/imagen-2023-11-16-132147246.png' border='0' alt='imagen-2023-11-16-132147246'/></a>
 
 -----------
+
+## Arquitectura del Sistema
+
+1 Cliente (Frontend):
+- plataforma: Desarrollo Android Studio
+- Framework de IU: A definir
+
+2 Servidor (Backend):
+- Lenguaje de Programación: Java
+- Base de datos: SQLite
+
+3 Autenticación y Autorización:
+
+4 Almacenamiento en la Nube:
+
+5 Seguridad:
+
+
+
+**Aviso:**
+
+Esta arquitectura proporciona una visión particular en terminos de los conocimientos basicos presentes en el equipo y se puede ajustar según las necesidades específicas de la aplicación y las competencias adquiridas durante el desarrollo. Es importante considerar que la arquitectura del sistema irá creciendo a medida de los avances. La vision general de la misma y el sistema completo se irá implementando durante el diseño del sistema o mas bien al finalizar el proyecto.
 
 ## Historias de usuario
 Historia de usuario  | --
@@ -90,6 +117,18 @@ Criterios |Esta sección presentará contenido multimedia de manera clara y atra
 
 ## Enlaces de interes
 
-- Mockups : https://www.figma.com/file/Mk79vOIMddFzCAAQutru4Z/Mockup-ArtFlow?type=design&t=I7Lh8mMQmfV63vsz-6
-- Proceso del Mokcup : https://www.instagram.com/p/CzpA0JVuP3U/
-- (MAP) : https://miro.com/app/board/uXjVNWA5kUA=/?share_link_id=327497059956
+- Mockups: [Figma](https://www.figma.com/file/Mk79vOIMddFzCAAQutru4Z/Mockup-ArtFlow?type=design&t=I7Lh8mMQmfV63vsz-6)
+- Proceso del Mockup: [Reel](https://www.instagram.com/p/CzpA0JVuP3U/)
+- (MAP): [MIRO](https://miro.com/app/board/uXjVNWA5kUA=/?share_link_id=327497059956)
+
+  ## Responsables
+- Análisis General: Cabrera Wilson Antonio 
+- UX/UI: Cabrera Wilson Antonio
+- FrontEnd: Miotto González Lautaro, 
+- Backend: Waidatt Samira , Flores Kiru Brian Juan
+
+  ## Autores
+- [@Wilson-Cabrera](https://github.com/Wilson-Cabrera)
+- Miotto Lautaro Gonzalez
+- Flores Juan Kiru
+- Waidatt Samira
