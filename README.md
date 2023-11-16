@@ -92,5 +92,4 @@ Criterios |Esta sección presentará contenido multimedia de manera clara y atra
 
 - Mockups : https://www.figma.com/file/Mk79vOIMddFzCAAQutru4Z/Mockup-ArtFlow?type=design&t=I7Lh8mMQmfV63vsz-6
 - Proceso del Mokcup : https://www.instagram.com/p/CzpA0JVuP3U/
-- MAP : https://miro.com/app/board/uXjVNWA5kUA=/
-- map2 https://miro.com/app/board/uXjVNWA5kUA=/?share_link_id=327497059956
+- (MAP) : https://miro.com/app/board/uXjVNWA5kUA=/?share_link_id=327497059956
