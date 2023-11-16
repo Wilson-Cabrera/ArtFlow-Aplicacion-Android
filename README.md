@@ -121,13 +121,17 @@ Criterios |Esta sección presentará contenido multimedia de manera clara y atra
 - Proceso del Mockup: [Reel](https://www.instagram.com/p/CzpA0JVuP3U/)
 - (MAP): [MIRO](https://miro.com/app/board/uXjVNWA5kUA=/?share_link_id=327497059956)
 
+------------
+
   ## Responsables
 - Análisis General: Cabrera Wilson Antonio 
 - UX/UI: Cabrera Wilson Antonio
 - FrontEnd: Miotto González Lautaro, 
 - Backend: Waidatt Samira , Flores Kiru Brian Juan
 
-  ## Autores
+------------
+
+## Autores
 - [@Wilson-Cabrera](https://github.com/Wilson-Cabrera)
 - Miotto Lautaro Gonzalez
 - Flores Juan Kiru
