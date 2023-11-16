@@ -1,5 +1,5 @@
 ### :rocket:ArtFlow-Aplicación-Android:rocket:
-Desarrollo de Aplicación para Android -  - Proyecto para la catedra Seminario de actualización 1, de la carrera Lic. en Diseño y Producción Multimedia. (Dictada por Patricio Pedersoli)
+Desarrollo de Aplicación para Android -  Proyecto para la catedra Seminario de actualización 1, de la carrera Lic. en Diseño y Producción Multimedia. (Dictada por Patricio Pedersoli)
 
 [![artflow-portada.png](https://i.postimg.cc/RhFvfM13/artflow-portada.png)](https://postimg.cc/sQkFCCNy)
 
