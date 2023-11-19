@@ -79,7 +79,7 @@ Historia de usuario  | --
 ID:  | 1
 Nombre de la historia  |  Inicio de Sesión en la Aplicación
 Programador responsable | Flores, Kiru
-Descripción | Como usuario de aplicación, quiero tener la capacidad de iniciar sesión de manera segura y conveniente para acceder a mis datos y personalizar mi experiencia.
+Descripción | Como usuario de la aplicación, quiero tener la capacidad de iniciar sesión de manera segura y conveniente para acceder a mis datos y personalizar mi experiencia.
 Validación | El usuario se asegura de que los datos ingresados como los nombres, dirección de correo electrónico o contraseñas sean correctos y cumplan con ciertos estándares.
 Criterios | El usuario tendrá dos campos para llenar, el primero con su Email y el segundo con su contraseña, después tendrá que apretar el botón de iniciar sesión para ingresar. O en su defecto si el usuario no cuenta con una cuenta tendrá un enlace que le llevara a una sección para poder registrarse.
 
