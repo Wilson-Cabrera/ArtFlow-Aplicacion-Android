@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746582784498",
+    "project_id": "artflowv1",
+    "storage_bucket": "artflowv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746582784498:android:0eb8dd2833eaf3f38d536b",
+        "android_client_info": {
+          "package_name": "ernesto.example.artflowv1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChoTA01h24ZMh32xJ8Xzgj0Fqr52bWHgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

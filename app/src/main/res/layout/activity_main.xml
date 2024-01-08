@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bienvenidos"
+
+    tools:context=".iniciar_sesion">
+
+
+
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btncerrarsesion"
+            android:onClick="cerrarSesion"
+            android:layout_marginTop="70dp"
+            android:background="#CECECE"
+            android:textColor="#5E548E"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            />
+
+
+</LinearLayout>

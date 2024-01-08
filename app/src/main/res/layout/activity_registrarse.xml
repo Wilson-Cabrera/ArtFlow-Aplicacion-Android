@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?> <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bienvenidos"
+
+    tools:context=".Registrarse">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo1"
+            app:srcCompat="@drawable/logo1"
+            android:layout_marginTop="20dp"
+            />
+
+        <!-- campo para que el usuario ponga el email -->
+
+        <!--campo para que el usuario ponga su nombre completo-->
+
+        <EditText
+            android:id="@+id/registrar_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:autofillHints="emailAddress"
+            android:ems="10"
+            android:hint="@string/email1"
+            android:inputType="textEmailAddress"
+            android:textSize="21sp" />
+
+
+        <!--campo para que el usuario ponga su contraseña-->
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/nombrecompleto"
+            android:inputType="text"
+            android:textSize="21sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="130dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="username"
+            android:ems="10"
+            android:hint="@string/usurname"
+            android:inputType="text"
+            android:textSize="21sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            />
+
+        <!--campo para que el usuario ponga su nombre de usuario-->
+        <EditText
+            android:id="@+id/registrar_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/pass1"
+            android:inputType="textPassword"
+            android:textSize="21sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp"/>
+
+        <Button
+            android:id="@+id/boton_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btnregistrate"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/btnregistrarse"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/loginRedirectText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/textview"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btnfacebook"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/btnfacebook"
+            android:drawableLeft="@drawable/logofacebook"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btngoogle"
+            android:layout_marginTop="510dp"
+            android:background="@drawable/btngoogle"
+            android:drawableLeft="@drawable/logogoogle"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="60dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

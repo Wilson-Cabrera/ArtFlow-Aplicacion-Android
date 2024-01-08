@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bienvenidos"
+
+    tools:context=".iniciar_sesion">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:cardCornerRadius="39dp"
+        app:cardElevation="20dp"
+        >
+
+<!--contenedor del login-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            />
+
+            <!-- logotipo de ArtFlow -->
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/artflow"
+                app:srcCompat="@drawable/artflow"
+                android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#CECECE"
+            android:backgroundTint="#CECECE"
+            android:autofillHints="emailAddress"
+            android:drawablePadding="6dp"/>
+
+        <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/pass"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColorHint="#CECECE"
+            android:backgroundTint="#CECECE"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="6dp"
+            android:autofillHints="password"/>
+
+        <Button
+            android:id="@+id/btIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ingresa"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btnlogin"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tvRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iraregistro"
+            android:gravity="center"
+            android:layout_marginTop="330dp"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/olvidastepass"
+            android:gravity="center"
+            android:layout_marginTop="370dp"
+            android:layout_marginBottom="40dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtingresa"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+
+
+</LinearLayout>

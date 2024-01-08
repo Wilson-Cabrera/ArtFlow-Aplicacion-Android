@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ArtflowV1</string>
+    <string name="txt_bienvenido">BIENVENIDO</string>
+    <string name="rectangulo">rectangulo</string>
+    <string name="artflow">artflow</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="ingresa">Ingresar</string>
+    <string name="iraregistro">Registrate</string>
+    <string name="olvidastepass">¿Has olvidado tu contraseña?</string>
+    <string name="txtingresa">Ingresa para ver las inspiraciones
+ de tus amigos.</string>
+
+
+    //registro
+    <string name="logo1">logo1</string>
+    <string name="email1">Email</string>
+    <string name="nombrecompleto">Nombre completo</string>
+    <string name="usurname">Nombre de usuario</string>
+    <string name="pass1">Password</string>
+    <string name="btnregistrate">Registrate</string>
+    <string name="textview">Al registrarte, aceptas nuestras Condiciones, nuestra Politica de privacidad y nuestra Politica de cookies.</string>
+    <string name="btnfacebook">Continuar con Facebook</string>
+    <string name="btngoogle">Continuar con Google</string>
+
+
+    //mainactivity
+    <string name="btncerrarsesion">Cerrar sesion</string>
+</resources>
