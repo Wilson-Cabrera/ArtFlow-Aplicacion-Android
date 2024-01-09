@@ -41,9 +41,9 @@ public class iniciar_sesion extends AppCompatActivity {
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-        // Obtener correo electrónico y contraseña del usuario
-        String email = loginemail.getText().toString();
-        String pass = loginpassword.getText().toString();
+                // Obtener correo electrónico y contraseña del usuario
+                String email = loginemail.getText().toString();
+                String pass = loginpassword.getText().toString();
 
                 // Validar el correo electrónico y la contraseña
                 if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -64,7 +64,7 @@ public class iniciar_sesion extends AppCompatActivity {
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                    // Mostrar mensaje de inicio de sesión fallido
+                                        // Mostrar mensaje de inicio de sesión fallido
                                         Toast.makeText(iniciar_sesion.this, "Error de inicio de sesion", Toast.LENGTH_SHORT).show();
 
                                     }
@@ -80,11 +80,11 @@ public class iniciar_sesion extends AppCompatActivity {
                 }
             }
         });
-            // Configurar click listener para el texto de redirección al registro
-            registrarseRedirectText.setOnClickListener(new View.OnClickListener() {
+        // Configurar click listener para el texto de redirección al registro
+        registrarseRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            // Redirigir a la actividad de registro
+                // Redirigir a la actividad de registro
                 startActivity(new Intent(iniciar_sesion.this, Registrarse.class));
             }
         });

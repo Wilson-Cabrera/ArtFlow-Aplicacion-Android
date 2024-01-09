@@ -26,4 +26,6 @@
 
     //mainactivity
     <string name="btncerrarsesion">Cerrar sesion</string>
+    <string name="default_web_client_id" translatable="false">746582784498-ughlde5h4j0qadk2bo43l2ncdk8pjlga.apps.googleusercontent.com</string>
+
 </resources>

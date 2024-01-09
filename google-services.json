@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "746582784498",
+    "firebase_url": "https://artflowv1-default-rtdb.firebaseio.com",
+    "project_id": "artflowv1",
+    "storage_bucket": "artflowv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746582784498:android:0eb8dd2833eaf3f38d536b",
+        "android_client_info": {
+          "package_name": "ernesto.example.artflowv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746582784498-hho4sv157d8scmodd9ia00crgh31arm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ernesto.example.artflowv1",
+            "certificate_hash": "f1e0d50635cbd25b2b75e5c1bec84ac7dae3f6c7"
+          }
+        },
+        {
+          "client_id": "746582784498-ughlde5h4j0qadk2bo43l2ncdk8pjlga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChoTA01h24ZMh32xJ8Xzgj0Fqr52bWHgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746582784498-ughlde5h4j0qadk2bo43l2ncdk8pjlga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
