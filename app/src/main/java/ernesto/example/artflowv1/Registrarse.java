@@ -11,6 +11,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -22,18 +28,25 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
+import java.util.Arrays;
 
 public class Registrarse extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private GoogleSignInClient mGoogleSignInClient;
     private int RC_SIGN_IN = 1;
+    private static final int FACEBOOK_LOGIN_REQUEST_CODE = 64206; // Puedes cambiar este valor
+
     private EditText registrarEmail, registrarContrasena;
+
+    // Google
     private Button botonRegistrar, GoogleAuth;
     private TextView loginRedirectText;
+
+    // Facebook
+    private Button botonRegistrarFB;
+    private CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +62,51 @@ public class Registrarse extends AppCompatActivity {
         botonRegistrar = findViewById(R.id.boton_registrar);
         loginRedirectText = findViewById(R.id.loginRedirectText);
         GoogleAuth = findViewById(R.id.button2);
+        botonRegistrarFB = findViewById(R.id.btnfacebook);
 
         // Configurar click listener para el botón de registrar
+
+        // Creación del objeto CallBackManager FACEBOOK
+        callbackManager = CallbackManager.Factory.create();
+
+        //Inyeccion
+
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        Toast.makeText(Registrarse.this, "Inicio de sesión exitoso con Facebook", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Registrarse.this, MainActivity.class));
+                        finish();
+                        // App code
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        // App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                        // App code
+                    }
+                });
+
+        // Facebook
+        botonRegistrarFB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Verificar si hay una sesión activa de Facebook y cerrarla
+                if (AccessToken.getCurrentAccessToken() != null) {
+                    LoginManager.getInstance().logOut();
+                }
+
+                // Iniciar sesión con Facebook
+                LoginManager.getInstance().logInWithReadPermissions(Registrarse.this, Arrays.asList("public_profile"));
+                // Lógica para el inicio de sesión con Facebook
+            }
+        });
+
         botonRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,6 +169,30 @@ public class Registrarse extends AppCompatActivity {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
     }
 
+    // Manejo del resultado de actividades (Facebook y Google)
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Resultado de la actividad de inicio de sesión de Facebook
+        if (requestCode == FACEBOOK_LOGIN_REQUEST_CODE) {
+            callbackManager.onActivityResult(requestCode, resultCode, data);
+        }
+
+        // Resultado de la actividad de inicio de sesión de Google
+        if (requestCode == RC_SIGN_IN) {
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            try {
+                // Éxito en la autenticación de Google, autentica en Firebase
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                firebaseAuth(account);
+            } catch (ApiException e) {
+                // Manejo de errores en caso de fallo en la autenticación de Google
+                Toast.makeText(this, "Error en la autenticación de Google", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     private void googleSignIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -128,7 +208,7 @@ public class Registrarse extends AppCompatActivity {
                             // Registro exitoso, muestra un mensaje de éxito
                             Toast.makeText(Registrarse.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
 
-                            // Redirigir a la actividad de inicio de sesión
+                            // Redirigir a la actividad principal
                             startActivity(new Intent(Registrarse.this, MainActivity.class));
                         } else {
                             // Error al registrarse, muestra un mensaje de error
@@ -136,23 +216,5 @@ public class Registrarse extends AppCompatActivity {
                         }
                     }
                 });
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        // Resultado de la actividad de inicio de sesión de Google
-        if (requestCode == RC_SIGN_IN) {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            try {
-                // Éxito en la autenticación de Google, autentica en Firebase
-                GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuth(account);
-            } catch (ApiException e) {
-                // Manejo de errores en caso de fallo en la autenticación de Google
-                Toast.makeText(this, "Error en la autenticación de Google", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 }

@@ -28,4 +28,12 @@
     <string name="btncerrarsesion">Cerrar sesion</string>
     <string name="default_web_client_id" translatable="false">746582784498-ughlde5h4j0qadk2bo43l2ncdk8pjlga.apps.googleusercontent.com</string>
 
+    //identificadores Facebook
+
+    <string name="facebook_app_id">393164303077828</string>
+    <string name="fb_login_protocol_scheme">fb393164303077828</string>
+    <string name="facebook_client_token">56789</string>
+
+
+
 </resources>
