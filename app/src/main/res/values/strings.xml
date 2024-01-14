@@ -34,6 +34,8 @@
     <string name="fb_login_protocol_scheme">fb393164303077828</string>
     <string name="facebook_client_token">56789</string>
 
-
-
+//forgotpass
+    <string name="recup">Ingresá tu correo para recuperar tu contraseña</string>
+    <string name="recuperarcontraseña">Recuperar</string>
+    <string name="ir_iniciar_sesion">Iniciar sesion</string>
 </resources>

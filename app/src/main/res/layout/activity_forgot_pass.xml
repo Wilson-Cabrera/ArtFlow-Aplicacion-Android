@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/slateblue"
+
+    tools:context=".ForgotPass">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:cardCornerRadius="39dp"
+        app:cardElevation="20dp"
+        >
+
+
+        <!--contenedor del login-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            />
+
+        <!-- logotipo de ArtFlow -->
+        <TextView
+            android:id="@+id/ReciperarPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/recup"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/etEmailRecup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="40dp"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="#CECECE"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#CECECE" />
+
+        <Button
+            android:id="@+id/btnRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btnlogin"
+            android:text="@string/recuperarcontraseña"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/ir_iniciar_sesion" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

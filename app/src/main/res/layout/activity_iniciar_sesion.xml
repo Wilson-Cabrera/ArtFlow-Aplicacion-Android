@@ -38,7 +38,7 @@
                 android:layout_marginTop="50dp"/>
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmailRecup"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="110dp"
@@ -72,7 +72,7 @@
             android:autofillHints="password"/>
 
         <Button
-            android:id="@+id/btIngresar"
+            android:id="@+id/btnRecuperar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/ingresa"
@@ -93,7 +93,7 @@
             />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/restablecerPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/olvidastepass"

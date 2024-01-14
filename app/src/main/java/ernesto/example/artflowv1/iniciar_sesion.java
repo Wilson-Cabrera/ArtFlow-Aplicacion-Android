@@ -17,13 +17,11 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.regex.Pattern;
-
 public class iniciar_sesion extends AppCompatActivity {
     private FirebaseAuth Auth;
     private EditText loginemail, loginpassword;
     private Button loginbutton;
-    private TextView registrarseRedirectText;
+    private TextView registrarseRedirectText, restablecerPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +30,11 @@ public class iniciar_sesion extends AppCompatActivity {
         // Inicializar FirebaseAuth
         Auth = FirebaseAuth.getInstance();
         // Inicializar UI elements
-        loginemail = findViewById(R.id.etEmail);
+        loginemail = findViewById(R.id.etEmailRecup);
         loginpassword = findViewById(R.id.etContrasena);
-        loginbutton = findViewById(R.id.btIngresar);
+        loginbutton = findViewById(R.id.btnRecuperar);
         registrarseRedirectText = findViewById(R.id.tvRegistrarse);
+        restablecerPassword = findViewById(R.id.restablecerPass);
 
         // Configurar click listener para el botón de inicio de sesión
         loginbutton.setOnClickListener(new View.OnClickListener() {
@@ -88,5 +87,15 @@ public class iniciar_sesion extends AppCompatActivity {
                 startActivity(new Intent(iniciar_sesion.this, Registrarse.class));
             }
         });
-    }
+// Configurar click listener para el texto ¿Has olvidado tu contraseña?
+
+        restablecerPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(iniciar_sesion.this,ForgotPass.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+     }
 }
