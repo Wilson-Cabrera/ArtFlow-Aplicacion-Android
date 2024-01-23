@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#231942"
+        android:minHeight="75dp"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        android:contentDescription="@string/starflowwhite"
+        android:src="@drawable/artflowwhite" />
+
+    <!-- Contenido principal de la actividad -->
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="52dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/starflowwhite"
+        android:src="@drawable/search" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/bienvenidos"> <!-- Agregado un margen top para dejar espacio para el Toolbar -->
+
+        <!-- Contenido de tu actividad -->
+
+    </FrameLayout>
+
+</FrameLayout>
