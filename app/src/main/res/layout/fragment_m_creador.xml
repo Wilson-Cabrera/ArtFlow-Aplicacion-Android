@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MCreadorFragment"
+    android:background="#231942">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/white"/>-->
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taylorxl" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="552dp"
+        android:background="#231942" />
+
+    <TextView
+        android:id="@+id/txt_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Crear"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="192dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/linemc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="620dp"
+        android:clickable="true"
+        android:contentDescription="@string/linea"
+        android:src="@drawable/linemc"/>
+
+
+    <ImageView
+        android:id="@+id/btnGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="670dp"
+        android:clickable="true"
+        android:contentDescription="@string/galeria"
+        android:onClick="abrirGaleria"
+        android:src="@drawable/addcirclesharp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reel"
+        android:layout_marginTop="673dp"
+        android:layout_marginLeft="73dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/btnpublicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="720dp"
+        android:clickable="true"
+        android:contentDescription="@string/grid"
+        android:onClick="abrirGaleria"
+        android:src="@drawable/grid" />
+
+    <TextView
+        android:id="@+id/txtpublicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publicar"
+        android:layout_marginTop="720dp"
+        android:layout_marginLeft="73dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</FrameLayout>

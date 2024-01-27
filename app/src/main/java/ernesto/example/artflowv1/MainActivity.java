@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(new HomeFragment(), false);
                 } else if (itemId == R.id.NavGuardar) {
                     loadFragment(new GuardadosFragment(), false);
-                } else if (itemId == R.id.NavNotification) {
-                    loadFragment(new TendenciasFragment(), false);
+                } else if (itemId == R.id.NavMCreador) {
+                    loadFragment(new MCreadorFragment(), false);
                 } else if (itemId == R.id.NavProfile) {
                     loadFragment(new TendenciasFragment(), false);
                 }

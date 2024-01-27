@@ -47,5 +47,11 @@
     <string name="scroll">scroll</string>
     <string name="iv">iv</string>
 
+    //MCreadorFRagment
+    <string name="galeria">Abrir galeria</string>
+    <string name="linea">linea</string>
+    <string name="Crear">Crear</string>
+    <string name="publicar">Publicar</string>
+    <string name="grid">grid</string>
 
 </resources>

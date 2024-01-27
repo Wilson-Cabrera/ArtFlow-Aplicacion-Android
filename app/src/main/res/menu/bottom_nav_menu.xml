@@ -15,7 +15,7 @@
         android:icon="@drawable/bookmark"
         android:title="Guardar" />
     <item
-        android:id="@+id/NavNotification"
+        android:id="@+id/NavMCreador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/mas"
