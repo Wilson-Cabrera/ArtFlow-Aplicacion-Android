@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 // Según el elemento seleccionado, carga el fragmento correspondiente
                 if (itemId == R.id.NavHome) {
                     loadFragment(new HomeFragment(), false);
-                } else if (itemId == R.id.NavSearch) {
-                    loadFragment(new TendenciasFragment(), false);
+                } else if (itemId == R.id.NavGuardar) {
+                    loadFragment(new GuardadosFragment(), false);
                 } else if (itemId == R.id.NavNotification) {
                     loadFragment(new TendenciasFragment(), false);
                 } else if (itemId == R.id.NavProfile) {

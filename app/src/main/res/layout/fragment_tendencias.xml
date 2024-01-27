@@ -7,20 +7,90 @@
     tools:context=".TendenciasFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="TENDENCIAS"
-        android:textSize="28sp"/>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="216dp"
-        android:layout_height="187dp"
-        android:src="@drawable/artflow"
-        android:layout_gravity="center"/>
+        android:layout_width="1157dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/taylorxl" />
 
-    <Button
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="640dp"
+        android:text="Marta Fonzi"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Hoy estuve muy inspirada  en el rodaje.  "
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="675dp"
+        android:layout_marginLeft="30dp"/>
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="51dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="346dp"
+        android:layout_marginTop="535dp"
+        android:background="@drawable/rectangle_8" />
+
+    <ImageView
+        android:id="@+id/vectorGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guardar"
+        android:layout_marginTop="555dp"
+        android:layout_marginLeft="365dp"/>
+
+    <ImageView
+        android:id="@+id/vectorComentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/comentario"
+        android:layout_marginTop="595dp"
+        android:layout_marginLeft="363dp"/>
+
+    <ImageView
+        android:id="@+id/vectorCorazon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vectorcorazon"
+        android:layout_marginTop="635dp"
+        android:layout_marginLeft="360dp"/>
+
+    <ImageView
+        android:id="@+id/vectorShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse"
+        android:layout_marginTop="675dp"
+        android:layout_marginLeft="353dp"/>
+
+    <ImageView
+        android:id="@+id/vectorClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_marginTop="684dp"
+        android:layout_marginLeft="362dp"/>
+
+
+    <!--<Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -29,6 +99,6 @@
         android:layout_marginEnd="50dp"
         android:background="#ff0000"
         android:onClick="cerrarSesion"
-        android:text="cerrar sesion"/>
+        android:text="cerrar sesion"/>-->
 
 </FrameLayout>

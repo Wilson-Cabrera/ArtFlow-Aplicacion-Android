@@ -44,6 +44,8 @@
 
     //HomeFragment
     <string name="starflowwhite">logowhite</string>
+    <string name="scroll">scroll</string>
+    <string name="iv">iv</string>
 
 
 </resources>

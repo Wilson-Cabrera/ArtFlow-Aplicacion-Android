@@ -42,50 +42,7 @@ public class TendenciasFragment extends Fragment {
             redirectToLoginActivity();
         }
 
-        // Configurar el botón de cerrar sesión
-        Button btnCerrarSesion = view.findViewById(R.id.btnCerrarSesion);
-        btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cerrarSesion(); // Llamada al método cerrarSesion al hacer clic en el botón
-            }
-        });
-
         return view; // Devolver la vista inflada y configurada
-    }
-
-    // Método para cerrar sesión en Firebase, Google y Facebook
-    private void cerrarSesion() {
-        // Cerrar sesión en Firebase Authentication
-        mAuth.signOut();
-
-        // Cerrar sesión en Google
-        GoogleSignIn.getClient(requireContext(), GoogleSignInOptions.DEFAULT_SIGN_IN).signOut();
-
-        // Cerrar sesión en Facebook
-        LoginManager.getInstance().logOut();
-
-        // Verificar el estado de autenticación después de cerrar sesión
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-
-        // Si no hay usuario autenticado, la sesión se cerró correctamente
-        if (currentUser == null) {
-            showToast("¡Sesión cerrada exitosamente!");
-            requireActivity().finish(); // Finalizar la actividad actual
-        } else {
-            // Si hay un usuario, hubo un error al cerrar sesión
-            mostrarMensajeError("Error al cerrar sesión. Por favor, inténtalo de nuevo.");
-        }
-    }
-
-    // Método para mostrar mensajes de error
-    private void mostrarMensajeError(String mensaje) {
-        showToast("Se produjo un error. " + mensaje + " Inténtalo de nuevo más tarde.");
-    }
-
-    // Método para mostrar mensajes Toast
-    private void showToast(String message) {
-        Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show();
     }
 
     // Método para redirigir a la actividad de inicio de sesión

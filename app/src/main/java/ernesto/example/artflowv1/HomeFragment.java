@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.facebook.AccessToken;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -20,12 +22,26 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class HomeFragment extends Fragment {
 
+    private ImageView btnIrATendencias;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflar el diseño del fragmento
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Verificar la autenticación del usuario
+        // Buscar el botón por ID
+        btnIrATendencias = view.findViewById(R.id.btnIrATendencias);
+
+        // Configurar el listener de clic para el botón
+        btnIrATendencias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción a realizar cuando se hace clic en el botón (abrir un nuevo fragmento)
+                cargarTendenciasFragment();
+            }
+        });
+
+        // Verificar la autenticación del usuario y realizar otras configuraciones según sea necesario
         if (!usuarioEstaAutenticado()) {
             // Si el usuario no está autenticado, redirigir a la pantalla de inicio de sesión
             redirigirALogin();
@@ -81,7 +97,24 @@ public class HomeFragment extends Fragment {
                 actionBar.setDisplayShowHomeEnabled(true);
             }
         }
-
         // Puedes agregar más configuraciones de la Toolbar aquí si es necesario
+    }
+
+    private void cargarTendenciasFragment() {
+        // Crea una instancia del fragmento TendenciasFragment
+        TendenciasFragment tendenciasFragment = new TendenciasFragment();
+
+        // Obtiene el administrador de fragmentos y comienza una transacción
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        // Reemplaza el contenido actual del contenedor por el nuevo fragmento
+        fragmentTransaction.replace(R.id.FrameLayout, tendenciasFragment);
+
+        // Agrega la transacción al historial de retroceso
+        fragmentTransaction.addToBackStack(null);
+
+        // Confirma la transacción
+        fragmentTransaction.commit();
     }
 }
