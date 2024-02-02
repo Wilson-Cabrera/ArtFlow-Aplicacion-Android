@@ -60,11 +60,11 @@
         android:layout_marginTop="200dp"
         android:layout_marginStart="20dp"/>
 
-    <ImageView
-        android:id="@+id/imgMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/menusharp"
+    <Button
+        android:id="@+id/btnMenuHamburguesa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/menusharp"
         android:layout_gravity="end"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
@@ -119,6 +119,7 @@
         android:paddingStart="89dp"
         android:contentDescription="@string/btnMegusta"
         />
+
 
 
 </FrameLayout>
