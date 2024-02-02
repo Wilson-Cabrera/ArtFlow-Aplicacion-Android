@@ -47,11 +47,34 @@
     <string name="scroll">scroll</string>
     <string name="iv">iv</string>
 
+    <string name="btnCine">Cine</string>
+    <string name="btnAnimacion">Animación</string>
+    <string name="btnDG">Diseño Grafico</string>
+    <string name="btnUXUI">UX/UI</string>
+    <string name="btnEdicion">Edición</string>
+    <string name="btnPublicidad">Publicidad</string>
+    <string name="btnVideojuegos">Videojuegos</string>
+
+    <string name="search">Inspiración</string>
+    <string name="buscador">Campo de búsqueda. Ingrese aquí para buscar contenido en la aplicación. Puede escribir y editar el texto.</string>
+
     //MCreadorFRagment
     <string name="galeria">Abrir galeria</string>
     <string name="linea">linea</string>
     <string name="Crear">Crear</string>
     <string name="publicar">Publicar</string>
     <string name="grid">grid</string>
+
+    //Perfil fragment
+    <string name="perfilfoto">Foto de perfil</string>
+    <string name="NombreUsuario">Bianca Flores</string>
+    <string name="Biografia">Diseñadora multimedia apasionada. Transformo ideas en experiencias visuales impactantes.</string>
+   <string name="seguidores">50.310 Seguidores</string>
+    <string name="menusharp">Menu</string>
+
+    <string name="btnMensaje">Enviar mensaje</string>
+    <string name="btnSeguir">Seguir</string>
+    <string name="btnLampara">Posteos</string>
+    <string name="btnMegusta">Me gusta</string>
 
 </resources>

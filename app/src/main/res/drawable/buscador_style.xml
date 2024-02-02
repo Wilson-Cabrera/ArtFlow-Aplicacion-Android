@@ -1,0 +1,5 @@
+<!-- res/drawable/edittext_rounded_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Cambia @color/white al color que prefieras -->
+    <corners android:radius="20dp" /> <!-- Ajusta el radio para controlar la redondez de las esquinas -->
+</shape>

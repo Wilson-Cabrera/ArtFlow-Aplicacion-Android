@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (itemId == R.id.NavMCreador) {
                     loadFragment(new MCreadorFragment(), false);
                 } else if (itemId == R.id.NavProfile) {
-                    loadFragment(new TendenciasFragment(), false);
+                    loadFragment(new Perfil_Fragment(), false);
                 }
 
                 return true; // Devuelve true para indicar que el evento ha sido manejado

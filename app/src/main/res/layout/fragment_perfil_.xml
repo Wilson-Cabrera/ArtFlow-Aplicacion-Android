@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_Fragment"
+    android:background="#9F86C0">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/rectanguloblanco_shape"
+        />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />-->
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/perfil"
+        android:contentDescription="@string/perfilfoto"/>
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NombreUsuario"
+        android:layout_marginTop="40dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginStart="130dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/biografia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Biografia"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="80dp"/>
+
+    <TextView
+        android:id="@+id/seguidores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seguidores"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menusharp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/menusharp"/>
+
+    <Button
+        android:id="@+id/btnMensaje"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:text="@string/btnMensaje"
+        android:background="@drawable/botones_perfil"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="60dp"
+        />
+
+    <Button
+        android:id="@+id/btnSeguir"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:text="@string/btnSeguir"
+        android:background="@drawable/botones_perfil"
+        android:textColor="@color/white"
+        android:layout_marginTop="240dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="60dp"
+        />
+
+    <Button
+        android:id="@+id/btnPosteos"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:background="#504476"
+        android:layout_gravity="start"
+        android:drawableLeft="@drawable/lampara"
+        android:paddingStart="95dp"
+        android:contentDescription="@string/btnLampara"
+        />
+
+    <Button
+        android:id="@+id/btnMegusta"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:background="#231942"
+        android:layout_gravity="end"
+        android:drawableLeft="@drawable/corazoncito"
+        android:paddingStart="89dp"
+        android:contentDescription="@string/btnMegusta"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp" android:bottomLeftRadius="8dp" android:bottomRightRadius="8dp" />
+            <solid android:color="#9F86C0" /> <!-- Color de fondo cuando el botón está presionado -->
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp" android:bottomLeftRadius="8dp" android:bottomRightRadius="8dp" />
+            <solid android:color="#FFFFFF" /> <!-- Color de fondo cuando el botón está seleccionado -->
+        </shape>
+        <item android:color="#8BC34A" /> <!-- Color del texto cuando el botón está seleccionado -->
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" />
+            <solid android:color="#231942" /> <!-- Color de fondo predeterminado del botón -->
+        </shape>
+        <item android:color="#000000" /> <!-- Color del texto predeterminado del botón -->
+    </item>
+</selector>

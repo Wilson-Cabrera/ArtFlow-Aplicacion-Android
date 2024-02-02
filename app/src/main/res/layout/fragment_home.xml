@@ -13,10 +13,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="#231942"
         android:minHeight="75dp"
         android:theme="?attr/actionBarTheme" />
+
+
 
     <ImageView
         android:layout_width="wrap_content"
@@ -28,20 +30,161 @@
         android:src="@drawable/artflowwhite" />
 
     <!-- Contenido principal de la actividad -->
-    <ImageView
+    <!--<ImageView
         android:layout_width="146dp"
         android:layout_height="52dp"
         android:layout_gravity="end"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:contentDescription="@string/starflowwhite"
-        android:src="@drawable/search" />
+        android:src="@drawable/search" />-->
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="135dp"
+        android:layout_height="38dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buscador_style"
+        android:contentDescription="@string/buscador"
+        android:drawableLeft="@drawable/icono_buscador"
+        android:drawablePadding="8dp"
+        android:drawableTint="#8E8E8E"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:textColor="#8E8E8E"
+        android:textSize="15dp" />
+
+    <ListView
+        android:id="@+id/listViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editTextSearch"
+        android:visibility="gone" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="68dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:attr/buttonBarButtonStyle">
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnCine"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnAnimacion"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnDG"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnUXUI"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnEdicion"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnPublicidad"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/redondear_boton_categorias"
+                android:text="@string/btnVideojuegos"
+                android:textSize="12sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/bienvenidos"> <!-- Agregado un margen top para dejar espacio para el Toolbar -->
 
         <!-- Contenido de la actividad -->
