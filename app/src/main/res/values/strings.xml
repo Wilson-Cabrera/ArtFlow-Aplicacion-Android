@@ -77,4 +77,19 @@
     <string name="btnLampara">Posteos</string>
     <string name="btnMegusta">Me gusta</string>
 
+    //Guardados Fragment
+    <string name="txtGuardadosFragment">Elementos guardados</string>
+    <string name="imgButtonGFDiseno">Descripcion del boton diseño</string>
+    <string name="tvGFDiseno">Diseño</string>
+    <string name="imgButtonGFProgramacion">Descripcion del boton programacion</string>
+    <string name="tvGFProgramacion">Programación</string>
+    <string name="imgButtonGFAnimacion">Descripcion del boton animacion</string>
+    <string name="tvGFAnimacion">Animación</string>
+    <string name="imgButtonGFAudiovisual">Descripcion del boton audiovisual</string>
+    <string name="tvGFAudiovisual">Audiovisual</string>
+    <string name="imgButtonGFMarketing">Descripcion del boton marketing</string>
+    <string name="tvGFMarketing">Marketing</string>
+    <string name="imgButtonGFEdicion">Descripcion del boton edición</string>
+    <string name="tvGFEdicion">Edición</string>
+
 </resources>

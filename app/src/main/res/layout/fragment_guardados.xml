@@ -5,24 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TendenciasFragment"
-    android:background="@drawable/bienvenidos">
+    android:background="#231942">
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Guardados"
-        android:textSize="28sp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtGuardadosFragment"
+        android:layout_gravity="start"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:textSize="22sp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="216dp"
-        android:layout_height="187dp"
-        android:src="@drawable/artflow"
-        android:layout_gravity="center"/>
 
-    <Button
+
+
+    <!--<Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -31,6 +31,144 @@
         android:layout_marginEnd="50dp"
         android:background="#ffffff"
         android:onClick="cerrarSesion"
-        android:text="cerrar sesion"/>
+        android:text="cerrar sesion"/>-->
+
+    <ImageButton
+        android:id="@+id/imgbtnGFDiseno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfdiseno"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/imgButtonGFDiseno"
+        />
+
+
+    <TextView
+        android:id="@+id/txtDiseño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFDiseno"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="87dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnGFProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfprogramacion"
+        android:background="@android:color/transparent"
+        android:layout_gravity="end"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/imgButtonGFProgramacion"/>
+
+    <TextView
+        android:id="@+id/txtProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFProgramacion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="58dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnGFAnimacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfanimacion"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/imgButtonGFAnimacion"
+        />
+
+    <TextView
+        android:id="@+id/txtAnimacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFAnimacion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="287dp"
+        android:layout_marginStart="70dp"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnGFAudiovisual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfaudiovisual"
+        android:background="@android:color/transparent"
+        android:layout_gravity="end"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/imgButtonGFAudiovisual"
+        />
+
+    <TextView
+        android:id="@+id/txtAudiovisual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFAudiovisual"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="65dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnGFMArketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfmarketing"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/imgButtonGFMarketing"
+        />
+
+    <TextView
+        android:id="@+id/txtMarketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFMarketing"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="418dp"
+        android:layout_marginStart="72dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnGFEdicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gfedicion"
+        android:background="@android:color/transparent"
+        android:layout_gravity="end"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/imgButtonGFEdicion"/>
+
+
+    <TextView
+        android:id="@+id/txtEdicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGFEdicion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="418dp"
+        android:layout_marginEnd="84dp"/>
 
 </FrameLayout>
