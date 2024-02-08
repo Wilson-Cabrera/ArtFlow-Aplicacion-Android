@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavView);
         frameLayout = findViewById(R.id.FrameLayout);
 
-        // Configuración del escuchador para la Bottom Navigation Bar
+        // Configuración del escuchador (listener )para la Bottom Navigation Bar
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
